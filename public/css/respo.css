@@ -1,0 +1,394 @@
+
+
+	@media (min-width: 1200px){
+	.full{
+    text-align:left;
+    margin-left: 0%;
+	height:55px;
+	}
+	.fine{
+	margin-top:0px;
+    width: 90%;
+    box-shadow: rgb(136, 136, 136) 4px 0px 121px;
+    margin-left: 0%;
+	}
+	.high{
+	height:640px !important;	
+	}
+	.finger{
+    text-align: left;
+    margin-top: -27px;
+    width: 45%;
+	}
+	.fish{
+    height: 266px;
+    width: 100%;
+    border: 1px solid gray;
+	}
+	.freez{
+    text-align: left;
+    margin-top: -3%;
+    display: block;
+    width: 45%;
+    margin-left: 6%;
+	}
+	.long{
+	height:300px;
+	}
+	.fresh{
+    width: 130%;
+    margin-left: -14%;
+	border: 1px solid;
+	padding:6px;
+	}
+	.save{
+    margin-left: 33%;
+	}
+	.add{
+	margin-left: 22%;
+	margin-top:6%;
+	}
+	.fliper{
+    height: 55px;
+    text-align: left !important;
+	}
+	.rough{
+	border: 1px solid green;
+    margin-top: -45px;
+    text-align: left;
+    width: 108%;
+    margin-left: -4%;
+	}
+	.box{
+    border: 1px solid green;
+    padding: 30px;
+    min-height: 320px;
+	width: 100%;
+    margin-left: -6%;
+	}
+	.box2{
+    border: 1px solid green;
+    padding: 30px;
+    min-height: 320px;
+        width: 100%;
+    margin-left: -6%;
+	}	
+	.first{
+	font-size: 12px;
+    line-height: 1;
+    margin: 20px;
+	}
+	
+		
+	}
+	
+	@media only screen and (min-width:760px) and (max-width: 771px){
+			.full{
+    text-align:left;
+    margin-left: 0%;
+	height:55px;
+	}
+	.fine{
+	margin-top:0px;
+    width: 100%;
+    box-shadow: rgb(136, 136, 136) 4px 0px 121px;
+    margin-left: 0%;
+	}
+	.high{
+	height:640px !important;	
+	}
+	.finger{
+    text-align: left;
+    margin-top: -27px;
+    margin-left: -8%;
+    width: 50%;
+	}
+	.fish{
+    height: 266px;
+    width: 108%;
+    border: 1px solid gray;
+	}
+	.freez{
+    text-align: left;
+    margin-top: -4%;
+    display: block;
+    width: 50%;
+    margin-left:8%;
+	}
+	.long{
+	height:300px;
+	}
+	.fresh{
+    width: 130%;
+    margin-left: -14%;
+	border: 1px solid;
+	padding:6px;
+	}
+	.save{
+    margin-left: 33%;
+	}
+	.add{
+	margin-left: 22%;
+	margin-top:6%;
+	}
+	.fliper{
+    height: 55px;
+    text-align: left !important;
+	}
+	.rough{
+	border: 1px solid green;
+    margin-top: -45px;
+    text-align: left;
+    width: 114%;
+    margin-left: -7%;
+	}
+	.box{
+    border: 1px solid green;
+    padding: 30px;
+    min-height: 320px;
+	width: 112%;
+    margin-left: -6%;
+    margin-top: -6%;
+	}
+	.box2{
+    border: 1px solid green;
+    padding: 30px;
+    min-height: 320px;
+        width: 112%;
+    margin-left: -6%;
+    margin-top: 4%;
+	}	
+	.first{
+	font-size: 12px;
+    line-height: 1;
+    margin: 20px;
+	}
+	}	
+	@media (max-width:479px) {
+		.full{
+    text-align:left;
+    margin-left: 0%;
+	height:55px;
+	}
+	.fine{
+	margin-top:0px;
+    width: 100%;
+    box-shadow: rgb(136, 136, 136) 4px 0px 121px;
+    margin-left: 0%;
+	}
+	.finger{
+    text-align: left;
+    margin-top: -27px;
+    margin-left: -19%;
+    width: 118%;
+	margin-bottom:8%;
+	}
+	.fish{
+    height: 266px;
+    width: 108%;
+    border: 1px solid gray;
+	}
+	.freez{
+    text-align: left;
+    margin-top: -4%;
+    display: block;
+    width: 114%;
+    margin-left:-12%;
+	}
+	.fresh{
+    width: 115%;
+    margin-left: -7%;
+    border: 1px solid;
+    padding: 4px;
+	}
+	.save{
+    margin-left: 33%;
+	}
+	.add{
+	margin-left: 22%;
+	margin-top:6%;
+	}
+	.fliper{
+    height: 55px;
+    text-align: left !important;
+	}
+	.rough{
+	border: 1px solid green;
+    margin-top: -45px;
+    text-align: left;
+    width: 128%;
+    margin-left: -14%;
+	}
+	.box{
+    border: 1px solid green;
+    padding: 30px;
+    min-height: 320px;
+    width: 128%;
+    margin-left: -13.5%;
+    margin-top: -12%;
+	}
+	.box2{
+    border: 1px solid green;
+    padding: 30px;
+    min-height: 320px;
+    width: 126%;
+    margin-left: -14%;
+    margin-top: 7%;
+	}	
+	.first{
+	font-size: 12px;
+    line-height: 1;
+    margin: 20px;
+	}
+	}
+	
+	@media (max-width:375px) {
+	.full{
+    text-align:left;
+    margin-left: 0%;
+	height:55px;
+	}
+	.fine{
+	margin-top:0px;
+    width: 100%;
+    box-shadow: rgb(136, 136, 136) 4px 0px 121px;
+    margin-left: 0%;
+	}
+	.finger{
+    text-align: left;
+    margin-top: -27px;
+    margin-left: -24%;
+	}
+	.fish{
+    height: 266px;
+    width: 120%;
+    border: 1px solid gray;
+	margin-bottom:10%
+	}
+	.freez{
+    text-align: left;
+    margin-top: 5%;
+    display: block;
+    width: 135%;
+    margin-left:-18%;
+	}
+	.fresh{
+width: 106%;
+    border: 1px solid;
+    margin-left: -4.5%;
+    padding: 4px;
+	}
+	.save{
+    margin-left: 33%;
+	}
+	.add{
+	margin-left: 22%;
+	margin-top:6%;
+	}
+	.fliper{
+    height: 55px;
+    text-align: left !important;
+	}
+	.rough{
+	border: 1px solid green;
+    margin-top: -45px;
+    text-align: left;
+    width: 136%;
+    margin-left: -18%;
+	}
+	.box{
+    border: 1px solid green;
+    padding: 30px;
+    min-height: 320px;
+    width: 134%;
+	margin-left: -17.5%;
+    margin-top: -18%;
+	}
+	.box2{
+    border: 1px solid green;
+    padding: 30px;
+    min-height: 320px;
+    width: 135%;
+    margin-left: -18%;
+    margin-top: 7%;
+	}	
+	.first{
+	font-size: 12px;
+    line-height: 1;
+    margin: 20px;
+	}
+	}
+   
+	@media (max-width:320px) {
+	.full{
+    text-align:left;
+    margin-left: 0%;
+	height:55px;
+	}
+	.first{
+	font-size: 12px;
+    line-height: 1;
+    margin: 20px;
+	}
+	.fine{
+	margin-top: -1px;
+    width: 100%;
+    box-shadow: rgb(136, 136, 136) 4px 0px 121px;
+    margin-left: 0%;
+	}
+	.finger{
+    text-align: left;
+    margin-top: -27px;
+    margin-left: -31%;
+	}
+	.fish{
+    height: 266px;
+    width: 140%;
+    border: 1px solid gray;
+	}
+	.freez{
+    text-align: left;
+    margin-top: -4%;
+    display: block;
+    width: 144%;
+    margin-left: -23%;
+	}
+	.fresh{
+    width: 114%;
+    margin-left: -6%;
+    padding: 4px;
+	}
+	.save{
+    margin-left: 33%;
+	}
+	.add{
+	margin-left: 22%;
+	margin-top:6%;
+	}
+	.fliper{
+    height: 55px;
+    text-align: left !important;
+	}
+	.rough{
+	border: 1px solid green;
+    margin-top: -45px;
+    text-align: left;
+    width: 148%;
+    margin-left: -24%;
+	}
+	.box{
+    border: 1px solid green;
+    padding: 30px;
+    min-height: 320px;
+    width: 148%;
+    margin-left: -25%;
+    margin-top: -23%;
+	}
+	.box2{
+    border: 1px solid green;
+    padding: 30px;
+    min-height: 320px;
+    width: 148%;
+    margin-left: -24%;
+    margin-top: 7%;
+	}

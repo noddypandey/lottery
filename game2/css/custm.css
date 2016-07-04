@@ -1,0 +1,736 @@
+
+.referral-top
+{
+	padding: 1px 22px;
+    border-radius: 2px 2px 0 0;
+    background: #192429;
+    color: #fff;
+}
+.referral-content {
+    background-color: #202f36;
+    color: #fff;
+    font-size: 16px;
+}
+.ref-sec{
+    border-bottom: 1px solid #000;
+}
+.rener {
+    padding: 41px 0 47px;
+    text-align: center;
+}
+.recode {
+    padding: 36px 20px 45px;
+}
+.refer1 {
+    border-bottom: 1px solid #000;
+}
+.Kode-container {
+    padding: 31px 20px 32px;
+}
+.Kode-description
+{
+	    padding: 10px 0 47px;
+    text-align: center;
+}
+.re-Kode-container {
+    margin: 20px 0 35px;
+    padding: 0 16px;
+}
+.re-Kode-input {
+    border: none;
+    text-align: center;
+    width: 97%;
+    border-radius: 7px;
+    height: 52px;
+}
+.reKodeson {
+    width: 485px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    font-size: 15px;
+    line-height: 19px;
+}
+.new-Kode-description {
+    margin-top: 2px;
+    font-size: 15px;
+    line-height: 19px;
+}
+.refral-btn {
+    background: #f6e444;
+    border-radius: 3px;
+    padding: 11px 20px 14px;
+}
+.Kodee-dv {
+    padding: 16px 9px 17px 18px;
+}
+.Kore-pop1 {
+    padding: 17px 9px 18px 18px;
+    border-radius: 2px 2px 0 0;
+    background: #192429;
+    color: #fff;
+}
+.Kore-dylog {
+    background: #182328;
+    color: #fff;
+    font-size: 16px;
+	
+	    position: relative;
+    padding: 2px;
+    /* width: 950px; */
+    padding-left: 20px;
+    /* margin-left: 22px; */
+
+}
+.Kode-son {
+	margin-left: -14px;
+    width: 311px;
+    background-color: #223138;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -3px;
+    padding-bottom: -59px;
+    height: 315px;
+    position: relative;
+}
+.k-pads
+{
+	margin-left:1px;
+}
+.my-btn{
+	    margin-top: 32px;
+    margin-left: 79px;
+}
+
+
+.round-dv
+{
+	    position: relative;
+		height: 400px;
+		margin-top: -40px;
+}
+
+.round-dv .game-content {
+    background-color: #182328;
+    color: #fff;
+    padding: 19px 0 24px 24px;
+	
+}
+
+.game-content {
+    position: relative;
+    z-index: 3;
+    background-color: #02020c;
+    overflow: hidden;
+}
+.game-bets-container {
+    overflow-y: hidden;
+    background-color: #19343f;
+    min-height: 600px;
+}
+.bonus-game-roulette {
+    height: 360px;
+    float: left;
+}
+.bonus-game-bet-calc {
+    width: 412px;
+}
+.game-roulette-history {
+    display: inline-block;
+    margin: 23px 0 14px 27px;
+    width: 353px;
+    overflow-x: hidden;
+    height: 28px;
+}
+.bonus-game-info {
+    color: #fff;
+    border-bottom: 1px solid #182328;
+}
+.game-roulette {
+    margin-top: 14px;
+}
+.game-roulette-numbers {
+    background-image: url(wheel.png);
+    width: 339px;
+    height: 339px;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    position: absolute;
+    z-index: 2;
+    margin-top: 1px;
+    margin-left: 1px;
+    display: none;
+}
+.bonus-game-state-container {
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    position: relative;
+}
+.sprite.game-roulette-cursor {
+    width: 18px;
+    height: 39px;
+    background-position: -144px -5px;
+    position: absolute;
+    top: 165px;
+    right: 57px;
+    z-index: 3;
+}
+.bonus-game-calc {
+    padding: 15px 14px 1px;
+    border-radius: 6px;
+    background-color: #19343f;
+    margin-top: 15px;
+    width: 428px;
+    height: 225px;
+      margin-left: -30px;
+}
+
+
+
+
+
+
+
+
+
+.Korec-dv {
+    display: inline-block;
+    margin-right: 1px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 16px;
+    line-height: 34px;
+    min-height: 34px;
+    min-width: 34px;
+    vertical-align: top;
+	    border-right-color: #50707d;
+    background: linear-gradient(180deg,#50707d 0,#224a5b 20%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#50707d',endColorstr='#224a5b',GradientType=0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.an-bnt
+{
+	color: #28adcb !important;
+}
+.an-bnt:hover
+{
+	color: white !important;
+}
+.to-dv{
+	    margin-top: 12px;
+}
+
+.button {
+        background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 20%;
+    height: 46px;
+}
+
+
+.button2 {
+    background-color: #008CBA;
+    color: black;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.button3 {
+    background-color: #f44336;
+    color: black;
+}
+
+.button3:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+
+
+.button5 {
+    background-color: #555555;
+    color: black;
+}
+
+.circle-round {
+    display: inline-block;
+    color: #fff;
+    border-radius: 28px;
+    height: 28px;
+    width: 28px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 8px;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.button5:hover {
+    background-color: #555555;
+    color: white;
+}
+.rrd
+{
+	background:#c9302c;
+}
+.blk
+{
+	background:black;
+}
+.grrn
+{
+	background:#4db04b;
+}
+.crcl-ul
+{
+	margin-left: -50px;
+    margin-top: 19px;
+
+}
+
+.text1 {
+    background-color:#2988a6;
+    color:#fff;
+    display:inline-block;
+    padding-left:4px;
+	    border-radius: 6px 0 0 6px;
+}
+.arrow {
+    border-style: dashed;
+    border-color: transparent;
+    border-width: 0.20em;
+    display: -moz-inline-box;
+    display: inline-block;
+    /* Use font-size to control the size of the arrow. */
+    font-size: 100px;
+    height: 0;
+    line-height: 0;
+    position: relative;
+    vertical-align: middle;
+    width: 0;
+    background-color:#fff; /* change background color acc to bg color */ 
+    border-left-width: 0.2em;
+    border-left-style: solid;
+    border-left-color: #2988a6;
+    left:0.25em;
+}
+
+.n-kode
+{
+	width: 427px;
+    display: inline-block;
+    border-radius: 6px;
+    background-color: #19343f;
+    height: 41px;
+	    margin-left: -29px;
+}
+
+.tab-kored {
+    width: 35%;
+    display: inline-block;
+    float: left;
+    margin: 0 0 20px 20px;
+    font-size: 16px;
+}
+.tabkode-header {
+    background-color: #182328;
+    color: #fff;
+    border-top: 10px solid #000;
+    padding: 15px 10px 0;
+    height: 54px;
+    position: relative;
+    z-index: 1;
+	border-color: #ae2e2b;
+}
+.ul-korelist {
+    border: 2px solid #182328;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+.li-korelist:not(:last-child) {
+    border-bottom: 1px solid #182328;
+}
+.li-korelist .li-vdiv {
+    float: right;
+    padding: 14px 10px 0 0;
+    max-width: 45px;
+}
+.img-padding{
+padding: 5px;
+width: 50px;
+margin-left:-40px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.bonus-shop .stroe-Kode-container {
+    position: relative;
+}
+
+.stroe-Kode-container {
+    float: right;
+    margin-top: -2px;
+}
+.coin-Kodedvc {
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+.Kode-balence-show {
+    margin-left: 12px;
+    text-align: center;
+}
+
+.Kode-balence-show, .coin-Kodedvc {
+    display: inline-block;
+    vertical-align: top;
+}
+.Kode-bonus-u {
+    width: 203px;
+    text-align: left;
+    background-color: #040712;
+    color: #f6e444;
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-family: pf_square_sans_proregular,sans-serif;
+    padding-left: 10px;
+}
+.Kode-bonus-u .snow.add-snow {
+    margin: 10px 7px 0 0;
+    float: right;
+    transform: scale(1.25);
+    width: 22px;
+}
+
+.snow.add-snow {
+    width: 19px;
+    height: 19px;
+    background-position: -87px -3px;
+    background-image: url(src/img/bonus-room-sprites.png);
+    background-repeat: no-repeat;
+    background-size: 267px;
+    display: inline-block;
+    vertical-align: sub;
+    margin-left: 1px;
+}
+.background-kodedv {
+    background-color: rgba(32,47,54,.95);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bonus-shop-content {
+    background-color: rgba(32,47,54,.95);
+}
+.kode-list-drop .kode-list-drop-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.kode-list-drop .kode-list-drop-list>li.pistols {
+    width: 107px;
+}
+
+.kode-list-drop .kode-list-drop-list>li {
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    padding: 12px 0;
+    background-color: #05090e;
+    cursor: pointer;
+    transition: color .3s;
+    text-align: center;
+    font-size: 14.5px;
+}
+.kode-list-drop .kode-list-drop-list>li.dropdown .title {
+    position: relative;
+}
+.kode-list-drop .kode-list-drop-list>li {
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    padding: 12px 0;
+    background-color: #05090e;
+    cursor: pointer;
+    transition: color .3s;
+    text-align: center;
+    font-size: 14.5px;
+}
+.kode-list-drop .kode-list-drop-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.kode-list-drop .kode-list-drop-list>li.dropdown .title:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    right: -12px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 4px 0;
+    border-color: #fff transparent transparent;
+}
+.kode-list-drop .kode-list-drop-list>li .dropdown-menu {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #05090e;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-width: 200px;
+    z-index: 3;
+}
+.kode-list-drop .kode-list-drop-list>li .dropdown-menu>li {
+    display: block;
+    color: #fff;
+    padding: 10px 0 9px 73px;
+    cursor: pointer;
+    transition: color .3s;
+    background-repeat: no-repeat;
+    background-size: 30px 25px;
+    background-position: 20px 8px;
+    text-align: left;
+    border-bottom: 1px solid #05090e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dropbtn {
+    background-color: #05090e;
+    color: white;
+    padding: 11px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.newdropdown {
+    position: relative;
+    display: inline-block;
+	
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #05090e;
+    min-width: 160px;
+	
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+	 color: white;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;  color: black; }
+
+.newdropdown:hover .dropdown-content {
+    display: block;
+	
+	
+}
+
+.newdropdown:hover .dropbtn {
+    background-color: #05090e;
+	
+}
+.btn-outline
+{
+	    outline: none;
+}
+.select1-kode {
+    width: 132px;
+    display: inline-block;
+    color: #9ea7b3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 30px;
+    font-size: 14px;
+    vertical-align: bottom;
+}
+.kode-sel-div{
+    display: inline-block;
+    background-color: #131d22;
+    position: relative;
+    margin-left: 7px;
+    padding: 6px 6px 8px 9px;
+    cursor: pointer;
+}
+
+.bonus-shop-categories-filter .select-check-div {
+    min-width: 180px;
+}
+
+.bonus-shop-categories-filter .select-check-retry {
+    min-width: 180px;
+}
+
+.select-check-div {
+    display: none;
+    min-width: 220px;
+    background-color: #131d22;
+    padding: 9px 10px 10px 11px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    font-size: 14px;
+    color: #9ea7b3;
+}
+.select-check-retry {
+    display: none;
+    min-width: 220px;
+    background-color: #131d22;
+    padding: 9px 10px 10px 11px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    font-size: 14px;
+    color: #9ea7b3;
+}
+.checkbox-kode-new {
+    cursor: pointer;
+}
+.check-box-title {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+.check-box {
+    height: 10px;
+    width: 10px;
+    border: 1px solid #202f36;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+.input-kode1
+{
+	    border-color: #9ea7b3;
+    padding: 8px 10px 9px 15px;
+    background: #040712;
+	    width: 149px;
+    height: 35px;
+    font-size: 14px;
+    color: #fff;
+    margin-top: -5px;
+}
+ .empty {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.btn-yellow {
+    background: #f6e444;
+    border-radius: 3px;
+    padding: 11px 20px 14px;
+	display:inline;
+	padding: 6px 13px;
+	cursor: pointer;
+}
+.btn-blacks {
+    background: #05090e;
+    border-radius: 3px;
+    padding: 11px 20px 14px;
+	display:inline;
+	padding: 6px 13px;
+	cursor: pointer;
+}
+.bonus-shop-item-image {
+    width: 96%;
+    height: 60px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+.bonus-shop-item-price {
+    line-height: 26px;
+	width:96%;
+    color: #f6e444;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.bonus-shop-cart-items, .bonus-shop-items {
+    background-color: #131d22;
+    padding: 8px 12px;
+    margin: 9px 0 0;
+    height: 845px;
+    overflow: hidden;
+}
