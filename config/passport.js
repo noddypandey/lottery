@@ -90,8 +90,8 @@ passport.use(new GoogleStrategy({
 passport.use(new OpenIDStrategy({
   apiKey: process.env.STEAM_KEY,
   providerURL: 'http://steamcommunity.com/openid',
-  returnURL: 'http://localhost:3000/auth/steam/callback',
-  realm: 'http://localhost:3000/',
+  returnURL: '/auth/steam/callback',
+  realm: '/',
   stateless: true,
   profile:true
 }, (identifier,profile, done) => {
