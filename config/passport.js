@@ -92,13 +92,18 @@ passport.use(new OpenIDStrategy({
   providerURL: 'http://steamcommunity.com/openid',
   returnURL: 'http://localhost:3000/auth/steam/callback',
   realm: 'http://localhost:3000/',
-  stateless: true
-}, (identifier, done) => {
+  stateless: true,
+  profile:true
+}, (identifier,profile, done) => {
   const steamId = identifier.match(/\d+$/)[0];
   const profileURL = `http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${process.env.STEAM_KEY}&steamids=${steamId}`;
 
   User.findOne({ steam: steamId }, (err, existingUser) => {
-    if (existingUser) return done(err, existingUser);
+    if (existingUser) {
+      console.log(existingUser); 
+      return done(err, existingUser); 
+      console.log("I was called.");
+    }
     request(profileURL, (error, response, body) => {
       if (!error && response.statusCode === 200) {
         const data = JSON.parse(body);
@@ -115,6 +120,7 @@ passport.use(new OpenIDStrategy({
         });
       } else {
         done(error, null);
+        console.log("I was also called");
       }
     });
   });

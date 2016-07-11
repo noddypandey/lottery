@@ -1,0 +1,26 @@
+nav.navbar.navbar-inverse.navbar-static-top
+  .container-fluid.pool
+    .navbar-header
+      .head(style="background-image:url('logo-1.png')")
+      .head(style="background-image:url('logo-2.png')")
+      .head(style="background-image:url('logo-3.png')")
+      a.navbar-brand(href='/') Project name
+    #navbar.navbar-collapse.collapse
+      ul.nav.navbar-nav.navbar-right
+        if user
+          li.dropdown
+            a.navbar-avatar.dropdown-toggle(href='#', data-toggle='dropdown' style="padding:0px !important; margin-top:-9px !important;")
+              if user.picture
+                img(src=user.picture)
+              else
+                img(src=user.gravatar)
+              | <span> #{user.name || user.email || user.id} </span>
+              i.caret
+            ul.dropdown-menu
+              li
+                a(href='/account') My Account
+              li.divider
+              li
+                a(href='/logout') Logout
+        else
+

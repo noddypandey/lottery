@@ -1,26 +1,1758 @@
 doctype html
-html
+html(lang='en')
   head
+    title game
     meta(charset='utf-8')
-    meta(http-equiv='x-ua-compatible', content='ie=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    title= title
-    link(rel='stylesheet', href='/css/vendor/bootstrap.css')
-    link(rel='stylesheet', href='/css/main.css')
-  body
-    include includes/header
-    block content
-    include includes/footer
+    link(rel='stylesheet', href='css/vendor/bootstrap.css')
+    link(rel='stylesheet', href='css/meri.css')
+    link(rel='stylesheet', href='css/custm.css')
+    link(rel='stylesheet', href='css/respo.css')
+    script(src='js/lib/jquery.js')
+    script(src='js/lib/bootstrap.js')
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css', rel='stylesheet', integrity='sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1', crossorigin='anonymous')
+    script(type='text/javascript').
+      $(document).ready(function(){
+      //alert("TFGCbhjn");
+      $("#log").click(function(){
+      $("#myModal").modal('show');
+      })
+      });
+  body(style="background-image:url('bg.jpg')")
 
-    script(src='/js/lib/jquery.js')
-    script(src='/js/lib/bootstrap.js')
-    script(src='/js/main.js')
+    include includes/header1
+    // side bar
+    .container
+      .row
+        //sidebar
+        include includes/sidebar
+        .col-lg-9
+          .tab-content
+            #play.tab-pane.active(role='tabpanel')
+              div(style='background:#223138;')
+                .row
+                  .col-lg-offset-1.col-lg-5
+                    strong
+                      h1.white TOTAL PAID OUT :
+                    .bot
+                      h1
+                        center 123546454654 &nbsp $
+                  .col-lg-offset-1.col-lg-5
+                    h2.white(style='font-family:roboto') Log in to try your luck
+                    br
+                    a.btn-lg.warn(href="/auth/steam") Sign IN Through STREAM
+                  br
+                  br
+                  br
+                  br
+                  br
+                  br
+                  h4.white.font.color
+                    strong
+                      | All participants bring items or skins from CS:GO to the service. Once the necessary number of items has been reached or the time for the game has passed the system randomly selects a winner and awards them all the items. The chance to win depends on the value of the skins involved.
+              .row
+                .col-lg-12
+                  .col-lg-3.fear1
+                    center
+                      p.blocks Games Today
+                      p.block2 3025
+                  .col-lg-3.fear
+                    center
+                      p.blocks Unique players today
+                      p.block2 12351
+                  .col-lg-3.fear
+                    center
+                      p.blocks Items raffled today
+                      p.block2 4578
+                  .col-lg-3.fear1
+                    center
+                      p.blocks Biggest win today
+                      p.block2 41223
+              br
+              .row
+                img.img-responsive.sahi(src='giveaway_1.png')
+              br
+              .row
+                .col-lg-12
+                  ul.nav.nav-pills.nav-justified(role='tablist')
+                    li.black.ab.active(role='presentation')
+                      a(href='#classic', aria-controls='classic', role='tab', data-toggle='tab', style='color:white')
+                        p.ball  Classic Game 
+                        p(style='text-align: left;font-size: 12px;') At Stake
+                    li.black.ab(role='presentation')
+                      a(href='#fast', aria-controls='fast', role='tab', data-toggle='tab', style='color:white')
+                        p.ball Fast Game
+                        p(style='text-align: left;font-size: 12px;') At Stake
+                    li.black.ab(role='presentation')
+                      a(href='#double', aria-controls='double', role='tab', data-toggle='tab', style='color:white')
+                        p.ball Double Game
+                        p(style='text-align: left;font-size: 12px;') At Stake
+                    li.ab.black(role='presentation', style='border-right: 1px solid transparent;')
+                      a(href='#duel', aria-controls='duel', role='tab', data-toggle='tab', style='color:white')
+                        p.ball Duel Game
+                        p(style='text-align: left;font-size: 12px;') At Stake
+              // Tab panes
+              .tab-content
+                #classic.tab-pane.active.plan(role='tabpanel')
+                  .col-lg-12(style='background: #2cb8d6')
+                    h3(style='color:white')
+                      strong Game:#13551
+                    hr
+                  .row(style='background: #2cb8d6')
+                    .col-lg-8
+                      .progress(style='height:54px')
+                        .progress-bar.progress-bar-striped(role='progressbar', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100', style='width:40%') 15/50
+                    .col-lg-4
+                      .timer
+                        .countdownHolder
+                          span.countMinutes
+                            span.position
+                              span.digit.static(style='top: 0px;opacity: 1;transition: none;') 0
+                            span.position
+                              span.digit.static(style='top: 0px; opacity: 1; transition: none;') 0
+                          span.countDiv.countDiv0 :
+                          span.countSeconds
+                            span.position
+                              span.digit.static(style='top: 0px; opacity: 1; transition: 350ms ease;') 0
+                            span.position
+                              span.digit.static(style='top: 0px; opacity: 1; transition: 350ms ease;') 0
+                  .game-price.price
+                    .game-price-inner
+                      .game-price-arrow.game-price-arrow-left(style="background-image: url('arrow-left.png')")
+                      .game-price-content
+                        p
+                          | Join the game now and win: 
+                          span $0
+                      br
+                      br
+                      .game-price-arrow.game-price-arrow-right
+                  .row.white1
+                    .col-lg-6
+                      br
+                      br
+                      p.kala Conditions of the classic game:
+                      p.neela Min. bet $2.5, max. items 10.
+                      p.neela The higher the bet, the greater the chance to win. More info
+                    .col-lg-6
+                      br
+                      br
+                      center
+                        button.warn.btn-lg(type='button')
+                          i.fa.fa-steam(aria-hidden='true')
+                          |  &nbsp Sign in Through STREAM To play
+                  .col-lg-12(style='background: #2cb8d6;display:none')
+                    h3(style='color:white')
+                      strong Game:#13551
+                    hr
+                  .row(style='background: #2cb8d6;display:none')
+                    .col-lg-12
+                      img.solid(src='bull.png')
+                      img.solid(src='uimg.jpg')
+                      img.solid(src='uimg4.jpg')
+                      img.solid(src='uimg2.jpg')
+                      img.solid(src='uimg3.jpg')
+                      img.solid(src='bull.png')
+                      img.solid(src='uimg.jpg')
+                      img.solid(src='uimg4.jpg')
+                      img.solid(src='uimg2.jpg')
+                      img.solid(src='uimg3.jpg')
+                      br
+                      br
+                      hr
+                    .col-lg-5
+                      p.kala
+                        | Winning Ticket: 
+                        span.white #51321
+                      p.kala
+                        | Winner: 
+                        span.yellow AtIsh
+                      span.mirror  $51.23
+                      br
+                      br
+                    .col-lg-3.virk(style="background-image:url('weapon-frame.png')")
+                      img.ammy(src='gun.png')
+                    .col-lg-4
+                      .timer
+                        .countdownHolder
+                          span.countMinutes
+                            span.position
+                              span.digit.static(style='top: 0px;opacity: 1;transition: none;') 0
+                            span.position
+                              span.digit.static(style='top: 0px; opacity: 1; transition: none;') 0
+                          span.countDiv.countDiv0 :
+                          span.countSeconds
+                            span.position
+                              span.digit.static(style='top: 0px; opacity: 1; transition: 350ms ease;') 0
+                            span.position
+                              span.digit.static(style='top: 0px; opacity: 1; transition: 350ms ease;') 0
+                      center
+                        button.warn.btn-lg.fresher(type='button')  Be first to deposit 
+                  .row(style='background-color: #182328 ;')
+                    .col-lg-3(style='padding:1%')
+                      img(src='logo-1.png')
+                      span.white jsadnkn
+                    .col-lg-offset-5.col-lg-4.text1(style='background:red')
+                      center
+                        p.white $189.84 / 100%
+                        p.white Tickets: from #1 to #18984
+                        center
+                  .row
+                    .col-lg-12
+                      .hot
+                        img.list(src='gun.png')
+                        img.list(src='gun.png')
+                        img.list(src='gun.png')
+                        img.list(src='gun.png')
+                        img.list(src='gun.png')
+                        img.list(src='gun.png')
+                        img.list(src='gun.png')
+                  .row(style='background-color: #182328 ;')
+                    .col-lg-3(style='padding:1%')
+                      img(src='logo-1.png')
+                      span.white jsadnkn
+                    .col-lg-offset-5.col-lg-4.text1(style='background:red')
+                      center
+                        p.white $189.84 / 100%
+                        p.white Tickets: from #1 to #18984
+                        center
+                  .row
+                    .col-lg-12
+                      .hot
+                        img.list(src='logo-1.png')
+                        img.list(src='logo-1.png')
+                        img.list(src='logo-1.png')
+                        img.list(src='logo-1.png')
+                        img.list(src='logo-1.png')
+                        img.list(src='logo-1.png')
+                        img.list(src='logo-1.png')
+                  .row(style='background-color: #182328 ;')
+                    .col-lg-3(style='padding:1%')
+                      img(src='logo-1.png')
+                      span.white jsadnkn
+                    .col-lg-offset-5.col-lg-4.text(style='background:red')
+                      center
+                        p.white $189.84 / 100%
+                        p.white Tickets: from #1 to #18984
+                        center
+                  .row
+                    .col-lg-12
+                      .hot
+                        img.list(src='logo-1.png')
+                        img.list(src='logo-1.png')
+                        img.list(src='logo-1.png')
+                        img.list(src='logo-1.png')
+                        img.list(src='logo-1.png')
+                        img.list(src='logo-1.png')
+                        img.list(src='logo-1.png')
+                  br
+                  br
+                  .row(style='background: #2cb8d6;')
+                    .col-lg-3
+                      br
+                      img.img-rounded(src='bouton.gif', width='50%')
+                    .col-lg-9
+                      br
+                      center
+                        h3.white
+                          strong THE GAME HAS BEGUN! MAKE YOUR DEPOSITS!
+                      .fairplay
+                        a.white(href='') Fair Game
+                      p(style='font-size:10px') Round hash SHA224:18c8f726fb839d239198a2c058e0ed29753b81d0c6064de945939a48
+                  br
+                  center
+                    p.white Powered by Steam, a registered trademark of Valve Corporation.
+                #fast.tab-pane(role='tabpanel')
+                  .row.clash.plan1
+                    br
+                    br
+                    .col-lg-6
+                      p.text(style='font-size: 18px;')
+                        | Fast games - quick games for three players only.You have a great chance of winning in this game!Place a bet and sweep the board!
+                    .col-lg-3
+                      p.text  Number of players: &nbsp &nbsp &nbsp 3
+                      p.text  Bet amount: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 3
+                      p.text  Number of skins: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 3
+                    .col-lg-3
+                      p.text Sign in to place a bet:
+                      button.warn.btn-lg Sign In
+                  .row.infoto
+                    .col-lg-4
+                      p Game#51564
+                      img.cover(src='full.jpg')
+                      img.cover(src='full.jpg')
+                      img.cover(src='full.jpg')
+                    .col-lg-3.marg
+                      br
+                      br
+                      span.blog1
+                        img(src='go.png')
+                        img(src='go.png')
+                        img(src='go.png')
+                        img(src='go.png')
+                        img(src='go.png')
+                        img(src='go.png')
+                      br
+                      span.blog2
+                        img(src='go1.png')
+                        img(src='go1.png')
+                        img(src='go1.png')
+                        img(src='go1.png')
+                        img(src='go1.png')
+                      br
+                      span.blog3
+                        img(src='go2.png')
+                        img(src='go2.png')
+                        img(src='go2.png')
+                        img(src='go2.png')
+                    .col-lg-2.marg
+                      br
+                      br
+                      p ~$ 5.99 / 66.8%
+                      p ~$ 5.99 / 66.8%
+                      p ~$ 5.99 / 66.8%
+                    .col-lg-3.marg
+                      br
+                      br
+                      p.white  At Stake &nbsp &nbsp  &nbsp  &nbsp  &nbsp $0 
+                      p.white.none  winner
+                      center.white.none.lightgreen Captain TOP JR &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                      p.white.none  Win &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp $12.33 
+                      p.white.none  Chances &nbsp &nbsp &nbsp 73.5%
+                  .row.infoto
+                    .col-lg-4
+                      p Game#51564
+                      img.cover(src='full.jpg')
+                      img.cover(src='full.jpg')
+                      img.cover(src='full.jpg')
+                    .col-lg-3.marg
+                      br
+                      br
+                      span.blog1
+                        img(src='go.png')
+                        img(src='go.png')
+                        img(src='go.png')
+                        img(src='go.png')
+                        img(src='go.png')
+                        img(src='go.png')
+                      br
+                      span.blog2
+                        img(src='go1.png')
+                        img(src='go1.png')
+                        img(src='go1.png')
+                        img(src='go1.png')
+                        img(src='go1.png')
+                      br
+                      span.blog3
+                        img(src='go2.png')
+                        img(src='go2.png')
+                        img(src='go2.png')
+                        img(src='go2.png')
+                    .col-lg-2.marg
+                      br
+                      br
+                      p ~$ 5.99 / 66.8%
+                      p ~$ 5.99 / 66.8%
+                      p ~$ 5.99 / 66.8%
+                    .col-lg-3.marg
+                      br
+                      br
+                      p.white  At Stake &nbsp &nbsp  &nbsp  &nbsp  &nbsp $0
+                      p.white.none  winner
+                      center.white.none.lightgreen Captain TOP JR &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                      p.white.none  Win &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp $12.33 
+                      p.white.none  Chances &nbsp &nbsp &nbsp 73.5%
+                  .row.infoto
+                    .col-lg-4
+                      p Game#51564
+                      img.cover(src='full.jpg')
+                      img.cover(src='full.jpg')
+                      img.cover(src='full.jpg')
+                    .col-lg-3.marg
+                      br
+                      br
+                      span.blog1
+                        img(src='go.png')
+                        img(src='go.png')
+                        img(src='go.png')
+                        img(src='go.png')
+                        img(src='go.png')
+                        img(src='go.png')
+                      br
+                      span.blog2
+                        img(src='go1.png')
+                        img(src='go1.png')
+                        img(src='go1.png')
+                        img(src='go1.png')
+                        img(src='go1.png')
+                      br
+                      span.blog3
+                        img(src='go2.png')
+                        img(src='go2.png')
+                        img(src='go2.png')
+                        img(src='go2.png')
+                    .col-lg-2.marg
+                      br
+                      br
+                      p ~$ 5.99 / 66.8%
+                      p ~$ 5.99 / 66.8%
+                      p ~$ 5.99 / 66.8%
+                    .col-lg-3.marg
+                      br
+                      br
+                      p.white.none  At Stake &nbsp &nbsp  &nbsp  &nbsp  &nbsp $0
+                      p.white  winner
+                      center.white.lightgreen Captain TOP JR &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                      p.white  Win &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp $12.33 
+                      p.white  Chances &nbsp &nbsp &nbsp 73.5%
+                #double.tab-pane(role='tabpanel')
+                  .col-lg-12(style='background:#182328;')
+                    hr(style='margin-top:0;')
+                    br
+                    br
+                    br
+                    .round-dv
+                      .col-lg-12
+                        .col-lg-6(style='display:inline;')
+                          img(src='wheel.png')
+                        .col-lg-6(style='display:inline;')
+                          div
+                            div
+                              .bonus-value-container
+                                span
+                                  h4(style='color:white;display:inline;') Balance:
+                                span
+                                  h4(style='color:white;display:inline;') 0
+                                span
+                                  h4(style='color:white;display:inline;')
+                                    a(href='')
+                                      i.fa.fa-plus-circle(style='color:#f3e143;', aria-hidden='true')
+                              .bonus-game-calc
+                                ul.nav.nav-pills(role='tablist')
+                                  li.Korec-dv.black.ab(style=' border-top-left-radius: 5px;border-bottom-left-radius: 5px;width: 40px;height:35px;')
+                                    a.an-bnt(href='', style='color:white;margin-top:-7px;')
+                                      i.fa.fa-repeat(aria-hidden='true')
+                                  li.black.ab.Korec-dv(style='width: 40px;height:35px;margin-left:0;')
+                                    a.an-bnt(href='', style='color:white;margin-top:-7px;')
+                                      i.fa.fa-trash-o(aria-hidden='true')
+                                  li.black.ab.Korec-dv(style='width: 40px;height:35px;margin-left:0;')
+                                    a.an-bnt(href='', style='color:white;margin-top: -7px;margin-left:-8px;') +10
+                                  li.ab.black.Korec-dv(style='width: 50px;height:35px;margin-left:0;')
+                                    a.an-bnt(href='', style='color:white;margin-top: -7px;margin-left:-8px;') +100
+                                  li.Korec-dv.black.ab(style='width: 40px;height:35px;margin-left:0;')
+                                    a.an-bnt(href='', style='color:white;margin-top: -7px;margin-left:-8px;') +1K
+                                  li.Korec-dv.black.ab(style='width: 50px;height:35px;margin-left:0;')
+                                    a.an-bnt(href='', style='color:white;margin-top: -7px;margin-left:-8px;') +10K
+                                  li.black.ab.Korec-dv(style='width: 40px;height:35px;margin-left:0;')
+                                    a.an-bnt(href='', style='color:white;margin-top: -7px;margin-left:-8px;') X2
+                                  li.ab.black.Korec-dv(style='width:40px;height:35px;margin-left:0;')
+                                    a.an-bnt(href='', style='color:white;margin-top: -7px;margin-left:-8px;') 1/2
+                                  li.ab.black.Korec-dv(style='border-top-right-radius:5px;border-bottom-right-radius:5px;width:40px;height:35px;margin-left:0;')
+                                    a.an-bnt(href='', style='color:white;margin-top: -7px;margin-left:-8px;') All
+                                .to-dv
+                                  input.form-control(placeholder='Enter the amount...', type='text')
+                                div(style='margin-top:21px;')
+                                  p
+                                  h4(style='color:white;') Place a bet:
+                                  p
+                                  ul.nav.nav-pills(role='tablist')
+                                    li.ab
+                                      button.button.button3 0
+                                    li.ab
+                                      button.button.button2 0
+                                    li.ab
+                                      button.button.button5 0
+                              div
+                                ul.crcl-ul
+                                  li.circle-round.blk 1
+                                  li.circle-round.grrn 2
+                                  li.circle-round.rrd 3
+                                  li.circle-round.blk 4
+                                  li.circle-round.grrn 5
+                                  li.circle-round.rrd 6
+                                  li.circle-round.blk 7
+                                  li.circle-round.rrd 8
+                                  li.circle-round.grrn 10
+                              .n-kode
+                                .text1
+                                  | № 176525
+                                  span.arrow(style='background:#19343f;')
+                  .col-lg-12(style='background:#19343f;')
+                    br
+                    br
+                    br
+                    .col-lg-4.tab-kored.rrd(style='background:#19343f;margin-left:-15px;')
+                      .tabkode-header
+                        span Total Bets
+                        span(style='margin-left:120px;color:#f6e444;font-weight:700;') 8098
+                      ul.ul-korelist
+                        li.li-korelist(style='list-style:none;')
+                          img.img-padding(src='uimg.jpg')
+                          span(style='color:white;margin-left: 6px;') andy
+                          .li-vdiv(style='color:white;')
+                            | 1000
+                        li.li-korelist(style='list-style:none;')
+                          img.img-padding(src='uimg2.jpg')
+                          span(style='color:white;margin-left: 6px;') andy
+                          .li-vdiv(style='color:white;')
+                            | 1000
+                        li.li-korelist(style='list-style:none;')
+                          img.img-padding(src='uimg3.jpg')
+                          span(style='color:white;margin-left: 6px;') andy
+                          .li-vdiv(style='color:white;')
+                            | 1000
+                        li.li-korelist(style='list-style:none;')
+                          img.img-padding(src='uimg4.jpg')
+                          span(style='color:white;margin-left: 6px;') andy
+                          .li-vdiv(style='color:white;')
+                            | 1000
+                        li.li-korelist(style='list-style:none;')
+                          img.img-padding(src='uimg2.jpg')
+                          span(style='color:white;margin-left: 6px;') andy
+                          .li-vdiv(style='color:white;')
+                            | 1000
+                        li.li-korelist(style='list-style:none;')
+                          img.img-padding(src='uimg3.jpg')
+                          span(style='color:white;margin-left: 6px;') andy
+                          .li-vdiv(style='color:white;')
+                            | 1000
+                    .col-lg-4.tab-kored.rrd(style='background:#19343f;margin-left:-15px;')
+                      .tabkode-header
+                        span Total Bets
+                        span(style='margin-left:120px;color:#f6e444;font-weight:700;') 8098
+                      ul.ul-korelist
+                        li.li-korelist(style='list-style:none;')
+                          img.img-padding(src='uimg.jpg')
+                          span(style='color:white;margin-left: 6px;') andy
+                          .li-vdiv(style='color:white;')
+                            | 1000
+                        li.li-korelist(style='list-style:none;')
+                          img.img-padding(src='uimg2.jpg')
+                          span(style='color:white;margin-left: 6px;') andy
+                          .li-vdiv(style='color:white;')
+                            | 1000
+                        li.li-korelist(style='list-style:none;')
+                          img.img-padding(src='uimg3.jpg')
+                          span(style='color:white;margin-left: 6px;') andy
+                          .li-vdiv(style='color:white;')
+                            | 1000
+                        li.li-korelist(style='list-style:none;')
+                          img.img-padding(src='uimg4.jpg')
+                          span(style='color:white;margin-left: 6px;') andy
+                          .li-vdiv(style='color:white;')
+                            | 1000
+                        li.li-korelist(style='list-style:none;')
+                          img.img-padding(src='uimg2.jpg')
+                          span(style='color:white;margin-left: 6px;') andy
+                          .li-vdiv(style='color:white;')
+                            | 1000
+                        li.li-korelist(style='list-style:none;')
+                          img.img-padding(src='uimg3.jpg')
+                          span(style='color:white;margin-left: 6px;') andy
+                          .li-vdiv(style='color:white;')
+                            | 1000
+                    .col-lg-4.tab-kored.rrd(style='background:#19343f;margin-left:-15px;')
+                      .tabkode-header
+                        span Total Bets
+                        span(style='margin-left:120px;color:#f6e444;font-weight:700;') 8098
+                      ul.ul-korelist
+                        li.li-korelist(style='list-style:none;')
+                          img.img-padding(src='uimg.jpg')
+                          span(style='color:white;margin-left: 6px;') andy
+                          .li-vdiv(style='color:white;')
+                            | 1000
+                        li.li-korelist(style='list-style:none;')
+                          img.img-padding(src='uimg2.jpg')
+                          span(style='color:white;margin-left: 6px;') andy
+                          .li-vdiv(style='color:white;')
+                            | 1000
+                        li.li-korelist(style='list-style:none;')
+                          img.img-padding(src='uimg3.jpg')
+                          span(style='color:white;margin-left: 6px;') andy
+                          .li-vdiv(style='color:white;')
+                            | 1000
+                        li.li-korelist(style='list-style:none;')
+                          img.img-padding(src='uimg4.jpg')
+                          span(style='color:white;margin-left: 6px;') andy
+                          .li-vdiv(style='color:white;')
+                            | 1000
+                        li.li-korelist(style='list-style:none;')
+                          img.img-padding(src='uimg2.jpg')
+                          span(style='color:white;margin-left: 6px;') andy
+                          .li-vdiv(style='color:white;')
+                            | 1000
+                        li.li-korelist(style='list-style:none;')
+                          img.img-padding(src='uimg3.jpg')
+                          span(style='color:white;margin-left: 6px;') andy
+                          .li-vdiv(style='color:white;')
+                            | 1000
+                #duel.tab-pane(role='tabpanel')
+                  .row
+                    .col-lg-12.naya(style='border-bottom: 3px solid black;')
+                      br
+                      p.yellow GAME RULES:
+                      p.white
+                        | DUEL- the game mode where everything is all about the weapons! make the choice and beat the rival
+                      p.yellow(style='float:right') hide
+                      br
+                      br
+                      .col-lg-4.circle
+                        img.img-responsive.hh.left.inline(src='logo-1.png', width='10px')
+                        p.inline AK-47 Beats KNIFE
+                        img.img-responsive.hh.right.inline(src='logo-1.png', width='10px')
+                      .col-lg-4.circle
+                        img.img-responsive.hh.inline.left(src='logo-1.png', width='10px')
+                        p.inline AK-47 Beats KNIFE
+                        img.img-responsive.hh.inline.right(src='logo-1.png', width='10px')
+                      .col-lg-4.circle
+                        img.img-responsive.hh.inline.left(src='logo-1.png', width='10px')
+                        p.inline AK-47 Beats KNIFE
+                        img.img-responsive.hh.inline.right(src='logo-1.png', width='10px')
+                  .row.andaz(style='border-bottom: 3px solid black;')
+                    br
+                    .col-lg-6
+                      center
+                        h3.white  Login to try your luck
+                    .col-lg-6
+                      br
+                      button.btn.btn-warning.btn-lg(type='button') Sign IN Through STREAM
+                  .row.naya1(style='padding:2%; border-bottom:3px solid black;')
+                    .col-lg-4
+                      img.inline(src='full.jpg', width='10%')
+                      p.white.inline  &nbsp &nbsp &nbsp bqsnnq
+                    .col-lg-4
+                      center.white  At Stake: &nbsp &nbsp 207 
+                      center.white  Bet: &nbsp &nbsp 107 
+                    .col-lg-4
+                      button.btn.btn-lg(type='button') MEET THE CHALLENGE
+                  .row.naya1(style='padding:2%; border-bottom:3px solid black;')
+                    .col-lg-4
+                      img.inline(src='full.jpg', width='10%')
+                      p.white.inline  &nbsp &nbsp &nbsp bqsnnq
+                    .col-lg-4
+                      center.white  At Stake: &nbsp &nbsp 207 
+                      center.white  Bet: &nbsp &nbsp 107 
+                    .col-lg-4
+                      button.btn.btn-lg(type='button') MEET THE CHALLENGE
+                  .row.naya1(style='border-bottom: 3px solid black;')
+                    .col-lg-4.phela
+                      img.inline(src='full.jpg', width='20%')
+                      p.white.inline  &nbsp &nbsp &nbsp &nbsp &nbsp hbsckhbc
+                      img.inline(src='logo-1.png', width='10%', style='float:right')
+                    .col-lg-4
+                      br
+                      center.white  Tie
+                      center.white  At Stake: $57
+                    .col-lg-4.phela
+                      img.inline(src='logo-1.png', width='10%')
+                      p.white.inline  &nbsp &nbsp &nbsp &nbsp &nbsp hbsckhbc
+                      img.inline(src='full.jpg', width='20%', style='float:right')
+                  .row.naya1(style='border-bottom: 3px solid black;')
+                    .col-lg-4.phela
+                      img.inline(src='full.jpg', width='20%')
+                      p.white.inline  &nbsp &nbsp &nbsp &nbsp &nbsp hbsckhbc
+                      img.inline(src='logo-1.png', width='10%', style='float:right')
+                    .col-lg-4
+                      br
+                      center.white  Tie
+                      center.white  At Stake: $57
+                    .col-lg-4.phela
+                      img.inline(src='logo-1.png', width='10%')
+                      p.white.inline  &nbsp &nbsp &nbsp &nbsp &nbsp hbsckhbc
+                      img.inline(src='full.jpg', width='20%', style='float:right')
+            br
+            br
+            br
+            #topplayers.tab-pane(role='tabpanel')
+              .row
+                .col-lg-12
+                  ul.nav.nav-pills.nav-justified(role='tablist', style='margin-top: -7%;background: #213137;')
+                    li.active(role='presentation')
+                      a.ulta.white(href='#', aria-controls='classic', role='tab', data-toggle='tab', style='color: white;text-align: left;font-weight: bold;font-size: 20px;') Top Players Of:
+                    li(role='presentation')
+                      a.tab-span(href='#hours', aria-controls='hours', role='tab', data-toggle='tab', style='color: white;text-align:left;font-weight: bold;font-size: 20px;')  24 Hours
 
-    // Google Analytics: change UA-XXXXX-X to be your site's ID.
-    script.
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+                    li(role='presentation')
+                      a.tab-span(href='#days', aria-controls='days', role='tab', data-toggle='tab', style='color: white;text-align:left;font-weight: bold;font-size: 20px;')  30 Days
+              .row.bkl
+                .col-lg-3
+                  h2.dexter  14654
+                  p  Players ranked
+                .col-lg-3
+                  h2.dexter $ 24654
+                  p  Biggest Win Today
+                .col-lg-3
+                  h2.dexter  4654
+                  p  Games today
+                .col-lg-3
+                  h2.dexter  46554
+                  p  Unique players today
+              // Tab panes
+              .tab-content
+                #hours.tab-pane.active.plan(role='tabpanel')
+                  .adjust
+                    table.table
+                      thead.white1
+                        tr
+                          th.copy(style='padding:3%;') Rank
+                          th.copy(style='padding:3%;') Steam nickname
+                          th.copy(style='padding:3%;') Total wins
+                          th.copy(style='padding:3%;') Won
+                      tbody
+                        tr.kala1
+                          td.txt
+                            | 1 &nbsp &nbsp &nbsp &nbsp 
+                            img(src='truck.jpg', width='43px')
+                            |  &nbsp &nbsp 
+                            img(src='1.png')
+                          td.neela(style='vertical-align: middle;') Chokemeister!
+                          td.neela(style='vertical-align: middle;') 69
+                          td.neela(style='vertical-align: middle;') $27689.5
+                        tr.kala1
+                          td.txt(style='border-top: 1px solid transparent;')
+                            | 2 &nbsp &nbsp &nbsp &nbsp 
+                            img(src='bull.png', width='43px')
+                            |  &nbsp &nbsp 
+                            img(src='2.png')
+                          td.neela(style='vertical-align: middle;border-top: 1px solid transparent;') Chokemeister!
+                          td.neela(style='vertical-align: middle;border-top: 1px solid transparent;') 69
+                          td.neela(style='vertical-align: middle;border-top: 1px solid transparent;') $27689.5
+                        tr.kala1
+                          td.txt(style='border-top: 1px solid transparent;')
+                            | 3 &nbsp &nbsp &nbsp &nbsp 
+                            img(src='face.jpg', width='43px')
+                            |  &nbsp &nbsp 
+                            img(src='3.png')
+                          td.neela(style='vertical-align: middle;border-top: 1px solid transparent;') Chokemeister!
+                          td.neela(style='vertical-align: middle;border-top: 1px solid transparent;') 69
+                          td.neela(style='vertical-align: middle;border-top: 1px solid transparent;') $27689.5
+                        tr.white1
+                          td.tt.neela(style='border-top: 1px solid transparent;')
+                            | 4 &nbsp &nbsp &nbsp &nbsp 
+                            img(src='face1.jpg', width='43px')
+                            |  &nbsp &nbsp 
+                            img(src='3.png')
+                          td.tt.neela(style='vertical-align: middle;border-top: 1px solid transparent;') Chokemeister!
+                          td.tt.neela(style='vertical-align: middle;border-top: 1px solid transparent;') 69
+                          td.tt.neela(style='vertical-align: middle;border-top: 1px solid transparent;') $27689.5
+                        tr.white1
+                          td.tt.neela(style='border-top: 1px solid transparent;border-top: 1px solid transparent;')
+                            | 5 &nbsp &nbsp &nbsp &nbsp 
+                            img(src='face1.jpg', width='43px')
+                            |  &nbsp &nbsp 
+                            img(src='3.png')
+                          td.tt.neela(style='vertical-align: middle;border-top: 1px solid transparent;') Chokemeister!
+                          td.tt.neela(style='vertical-align: middle;border-top: 1px solid transparent;') 69
+                          td.tt.neela(style='vertical-align: middle;border-top: 1px solid transparent;') $27689.5
+                #day.tab-pane.plan(role='tabpanel')
+                  .adjust
+                    table.table
+                      thead.white1
+                        tr
+                          th.copy(style='padding:3%;') Rank
+                          th.copy(style='padding:3%;') Steam nickname
+                          th.copy(style='padding:3%;') Total wins
+                          th.copy(style='padding:3%;') Won
+                      tbody
+                        tr.kala1
+                          td.txt(style='border-top: 1px solid transparent;')
+                            | 1 &nbsp &nbsp &nbsp &nbsp 
+                            img(src='truck.jpg', width='43px')
+                            |  &nbsp &nbsp 
+                            img(src='1.png')
+                          td.neela(style='vertical-align: middle;border-top: 1px solid transparent;') Chokemeister!
+                          td.neela(style='vertical-align: middle;border-top: 1px solid transparent;') 69
+                          td.neela(style='vertical-align: middle;border-top: 1px solid transparent;') $27689.5
+                        tr.kala1
+                          td.txt(style='border-top: 1px solid transparent;')
+                            | 2 &nbsp &nbsp &nbsp &nbsp 
+                            img(src='bull.png', width='43px')
+                            |  &nbsp &nbsp 
+                            img(src='2.png')
+                          td.neela(style='vertical-align: middle;border-top: 1px solid transparent;') Chokemeister!
+                          td.neela(style='vertical-align: middle;border-top: 1px solid transparent;') 69
+                          td.neela(style='vertical-align: middle;border-top: 1px solid transparent;') $27689.5
+                        tr.kala1
+                          td.txt(style='border-top: 1px solid transparent;')
+                            | 3 &nbsp &nbsp &nbsp &nbsp 
+                            img(src='face.jpg', width='43px')
+                            |  &nbsp &nbsp 
+                            img(src='3.png')
+                          td.neela(style='vertical-align: middle;border-top: 1px solid transparent;') Chokemeister!
+                          td.neela(style='vertical-align: middle;border-top: 1px solid transparent;') 69
+                          td.neela(style='vertical-align: middle;border-top: 1px solid transparent;') $27689.5
+                        tr.white1
+                          td.tt.neela(style='border-top: 1px solid transparent;')
+                            | 4 &nbsp &nbsp &nbsp &nbsp 
+                            img(src='face1.jpg', width='43px')
+                            |  &nbsp &nbsp 
+                            img(src='3.png')
+                          td.tt.neela(style='vertical-align: middle;border-top: 1px solid transparent;') Chokemeister!
+                          td.tt.neela(style='vertical-align: middle;border-top: 1px solid transparent;') 69
+                          td.tt.neela(style='vertical-align: middle;border-top: 1px solid transparent;') $27689.5
+                        tr.white1
+                          td.tt.neela(style='border-top: 1px solid transparent;border-top: 1px solid transparent;')
+                            | 5 &nbsp &nbsp &nbsp &nbsp 
+                            img(src='face1.jpg', width='43px')
+                            |  &nbsp &nbsp 
+                            img(src='3.png')
+                          td.tt.neela(style='vertical-align: middle;border-top: 1px solid transparent;') Chokemeister!
+                          td.tt.neela(style='vertical-align: middle;border-top: 1px solid transparent;') 69
+                          td.tt.neela(style='vertical-align: middle;border-top: 1px solid transparent;') $27689.5
+                #days.tab-pane.plan(role='tabpanel')
+                  .adjust
+                    table.table
+                      thead.white1
+                        tr
+                          th.copy(style='padding:3%;') Rank
+                          th.copy(style='padding:3%;') Steam nickname
+                          th.copy(style='padding:3%;') Total wins
+                          th.copy(style='padding:3%;') Won
+                      tbody
+                        tr.kala1
+                          td.txt(style='border-top: 1px solid transparent;')
+                            | 1 &nbsp &nbsp &nbsp &nbsp 
+                            img(src='truck.jpg', width='43px')
+                            |  &nbsp &nbsp 
+                            img(src='1.png')
+                          td.neela(style='vertical-align: middle;border-top: 1px solid transparent;') Chokemeister!
+                          td.neela(style='vertical-align: middle;border-top: 1px solid transparent;') 69
+                          td.neela(style='vertical-align: middle;border-top: 1px solid transparent;') $27689.5
+                        tr.kala1
+                          td.txt(style='border-top: 1px solid transparent;')
+                            | 2 &nbsp &nbsp &nbsp &nbsp 
+                            img(src='bull.png', width='43px')
+                            |  &nbsp &nbsp 
+                            img(src='2.png')
+                          td.neela(style='vertical-align: middle;border-top: 1px solid transparent;') Chokemeister!
+                          td.neela(style='vertical-align: middle;border-top: 1px solid transparent;') 69
+                          td.neela(style='vertical-align: middle;border-top: 1px solid transparent;') $27689.5
+                        tr.kala1
+                          td.txt(style='border-top: 1px solid transparent;')
+                            | 3 &nbsp &nbsp &nbsp &nbsp 
+                            img(src='face.jpg', width='43px')
+                            |  &nbsp &nbsp 
+                            img(src='3.png')
+                          td.neela(style='vertical-align: middle;border-top: 1px solid transparent;') Chokemeister!
+                          td.neela(style='vertical-align: middle;border-top: 1px solid transparent;') 69
+                          td.neela(style='vertical-align: middle;border-top: 1px solid transparent;') $27689.5
+                        tr.white1
+                          td.tt.neela(style='border-top: 1px solid transparent;')
+                            | 4 &nbsp &nbsp &nbsp &nbsp 
+                            img(src='face1.jpg', width='43px')
+                            |  &nbsp &nbsp 
+                            img(src='3.png')
+                          td.tt.neela(style='vertical-align: middle;border-top: 1px solid transparent;') Chokemeister!
+                          td.tt.neela(style='vertical-align: middle;border-top: 1px solid transparent;') 69
+                          td.tt.neela(style='vertical-align: middle;border-top: 1px solid transparent;') $27689.5
+                        tr.white1
+                          td.tt.neela(style='border-top: 1px solid transparent;border-top: 1px solid transparent;')
+                            | 5 &nbsp &nbsp &nbsp &nbsp 
+                            img(src='face1.jpg', width='43px')
+                            |  &nbsp &nbsp 
+                            img(src='3.png')
+                          td.tt.neela(style='vertical-align: middle;border-top: 1px solid transparent;') Chokemeister!
+                          td.tt.neela(style='vertical-align: middle;border-top: 1px solid transparent;') 69
+                          td.tt.neela(style='vertical-align: middle;border-top: 1px solid transparent;') $27689.5
+            #faq.tab-pane(role='tabpanel')
+              .container
+                .row
+                  .col-lg-10
+                    #flip2.fliper.newcls(style='padding: 13px 23px 12px 26px; border:none;margin-top: -6.5%;border-radius: 2px 2px 0 0;background: #233138;')
+                      | GENRAL RULES AND QUESTIONS
+                    #panel2.fine(style='background:white;')
+                      #para2.low
+                        h4(style='text-align:left')
+                          strong 1.1 
+                          |  What game games are there in the project?
+                      br
+                      p#pane2(style='text-align:left')
+                        strong Classic Game 
+                        | – the game for those who like playing for the high stakes. Those wishing to try their luck place a bet on a general deposit that is raffled among players at the end of a round.
+                  .col-lg-2
+            #giveaway.tab-pane(role='tabpanel')
+              .row.old
+                h2.safed GIVEAWAY
+              .row
+                .col-lg-12.white1(style='margin-top: -1%;')
+                  br
+                  br
+                  p(style='    font-size: 15px;') Complete the following steps to take part in our giveaway!
+                  p(style='    font-size: 15px;') Every entry increases your chances to win. Results on our facebook page.
+                  .col-lg-2
+                  .col-lg-4.shad.bod2(style='border-bottom: solid 4px #e66c69;')
+                    center
+                      h1 0
+                      h3 Your Entries
+                  .col-lg-4.shad.bod1(style='    border-bottom: solid 4px #6b5b8c;')
+                    center
+                      h1 10
+                      h3  Hours Left
+                  .col-lg-2
+              .row
+                .col-lg-12.white1
+                  .col-lg-2
+                  .col-lg-8
+                    img(src='coin.jpg', style='width: 105.5%;margin-left: -2.8%;')
+                  .col-lg-2
+              .row
+                .col-lg-12.white1
+                  .col-lg-2
+                  .col-lg-8
+                    center
+                      h4.pol 10 Ways to Enter
+                    center
+                      h6.pol1
+                        | Login With: 
+                        i.fa.fa-envelope-square(aria-hidden='true')
+                        |  &nbsp 
+                        i.fa.fa-facebook-square.beech(aria-hidden='true')
+                        |  &nbsp 
+                        i.fa.fa-steam-square.beech(aria-hidden='true')
+                        |  &nbsp 
+                        i.fa.fa-twitter-square.beech(aria-hidden='true')
+                        |  &nbsp 
+                        i.fa.fa-youtube-square.beech(aria-hidden='true')
+                  .col-lg-2
+              .row
+                .col-lg-12.white1
+                  .col-lg-2
+                  .col-lg-8.gf
+                    .col-lg-1.fullon
+                      i.fa.fa-steam.fa-2x.xx(aria-hidden='true', style='color: white;;margin-left: -58%;')
+                    .col-lg-10.gff
+                      center
+                        h4(style='height: 16px;')  Join group csgofast on Steam
+                    .col-lg-1.beech(style='background:#1ABC9C;')
+                      p.white(style='font-size: 20px;')
+                        strong +5
+                  .col-lg-2
+              .row
+                .col-lg-12.white1
+                  .col-lg-2
+                  .col-lg-8.gf
+                    .col-lg-1.fullon(style='background:red')
+                      i.fa.fa-heart.fa-2x.xx(aria-hidden='true', style='color: white;margin-left: -58%;')
+                    .col-lg-10.gff
+                      center
+                        h4(style='height: 16px;') Invite Friends to the giveaway for Extra Entries
+                    .col-lg-1.beech(style='background:#1ABC9C;')
+                      p.white
+                        i.fa.fa-lock.fa-1x.xx(style='margin-left:1%;', aria-hidden='true')
+                  .col-lg-2
+              .row
+                .col-lg-12.white1
+                  .col-lg-2
+                  .col-lg-8.gf
+                    .col-lg-1.fullon(style='background:pink;')
+                      i.fa.fa-external-link-square.fa-2x.xx(aria-hidden='true', style='color: white;margin-left: -42%;')
+                    .col-lg-10.gff
+                      center
+                        h4(style='height: 16px;')  Place a bet at doublegame!
+                    .col-lg-1.pink.beech(style='background:#1ABC9C;')
+                      p.white.native +1
+                      p.white(style='font-size: 12px;') per day
+                  .col-lg-2
+              .row
+                .col-lg-12.white1
+                  .col-lg-2
+                  .col-lg-8.gf
+                    .col-lg-1.fullon(style='background:#1d8bc6;;')
+                      i.fa.fa-twitter.fa-2x.xx(aria-hidden='true', style='color:white')
+                    .col-lg-10.gff
+                      center
+                        h4(style='height: 16px;') Retweet @CSGOFAST_com on Twitter
+                    .col-lg-1.beech(style='background:#1ABC9C;')
+                      p.white +3
+                  .col-lg-2
+              .row
+                .col-lg-12.white1
+                  .col-lg-2
+                  .col-lg-8.gf
+                    .col-lg-1.fullon(style='background:#0bc2fc;')
+                      i.fa.fa-cog.fa-2x.xx(aria-hidden='true', style='color:white')
+                    .col-lg-10.gff
+                      center
+                        h4(style='height: 16px;')  Install SIH (Chrome users only)
+                    .col-lg-1.beech(style='background:#1ABC9C;')
+                      p.white +1
+                  .col-lg-2
+              .row
+                .col-lg-12.white1
+                  .col-lg-2
+                  .col-lg-8.gf
+                    h3(style='text-align:center;font-size: 24px;font-weight: 700;margin-bottom: 4px;color: #666;margin-top: 2px;')
+                      i.fa.fa-lock(aria-hidden='true')
+                      |  Unlock 20 more entries
+                    p(style='text-align:center;font-size: 14px;font-weight: 700;margin-bottom: 4px;color: #666;margin-top: 2px;')  Complete the above entries to unlock the rest!
+                  .col-lg-2
+            br
+            br
+            br
+            br
+            br
+            br
+            br
+            br
+            #referral.tab-pane(role='tabpanel')
+              .referral-top(style='    margin-top: -26%;')
+                h2 Referral
+              .referral-content
+                form.ref-sec.rener(style='display: block;')
+                  .Kode-description
+                    | Enter the code to receive 50 coins after your next game. You can spend them in the 
+                    a(href='#store') store
+                    | :
+                  .re-Kode-container
+                    input.re-Kode-input(type='text', placeholder='Enter the code')
+                  div
+                    input.button.btn.btn-danger(type='submit', value='Redeem 50 coins')
+                .refer1.recode(style='display: none;')
+                  .reKodeson
+                    h2 Your code
+                    |             Every time someone enters your code - that one becomes your referral.
+                    |             For every referral you receive 50 coins after their first game, and then 30% of commission for every game they play.
+                    |             Coins can be spent in the 
+                    a(href='#store') store
+                    | .
+                  .referral-code Error!
+                .Kode-container(style='display: none;')
+                  h2 Referral link
+                  .new-Kode-description
+                    | When someone clicks your referral link and signs in, that one becomes your referral; the same as if someone enters your code.
+                  .referral-code-ref-link
+                    | Error!
+            #store.tab-pane(role='tabpanel')
+              .referral-top(style='    margin-top: -26%;')
+                h2 STORE
+                .stroe-Kode-container(style=' margin-top: -52px;')
+                  div
+                    span.coin-Kodedvc Your coins:
+                    .Kode-balence-show
+                      .Kode-bonus-u
+                        span 0
+                        a(href='')
+                          i.fa.fa-plus-circle.snow.add-snow(aria-hidden='true')
+              .bonus-shop-content
+                .kode-list-drop
+                  ul.kode-list-drop-list
+                    .dropdown.forward
+                      button.dropbtn.btn-md.newdropdown.dropdown-toggle(data-toggle='dropdown')
+                        | Pistols
+                        span.caret
+                      ul.dropdown-menu.kaal
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp CZ75-Auto
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Desert Eagle
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Dual Berettas
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Five-SeveN
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Glock-18
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp P2000
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp P250
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp R8 Revolver
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Tec-9
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp USP-S
+                    .dropdown.forward
+                      button.dropbtn.btn-md.adu.newdropdown.dropdown-toggle(data-toggle='dropdown')
+                        | Rifles
+                        span.caret
+                      ul.dropdown-menu.kaal
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp AK-47
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp AUG
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp AWP
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp FAMAS
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp G3SG1
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Galil AR
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp M4A1-S
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp M4A4
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp SCAR-20
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp SG 553
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp SSG 08
+                    .dropdown.forward
+                      button.dropbtn.btn-md.adu.newdropdown.dropdown-toggle(data-toggle='dropdown', style='width: 20%;')
+                        | Submachine guns
+                        span.caret
+                      ul.dropdown-menu.kaal
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp MAC-10
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp MP7
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp MP9
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp PP-Bizon
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp P90
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp UMP-45
+                    .dropdown.forward
+                      button.dropbtn.btn-md.adu.newdropdown.dropdown-toggle(data-toggle='dropdown')
+                        | Heavy
+                        span.caret
+                      ul.dropdown-menu.kaal
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp MAG-77
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Nova
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Sawed-Off
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp XM1014
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp M249
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Negev
+                    .dropdown.forward
+                      button.dropbtn.btn-md.adu.newdropdown.dropdown-toggle(data-toggle='dropdown')
+                        | Knives
+                        span.caret
+                      ul.dropdown-menu.kaal
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Bowie Knife
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Bayonet
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Butterfly Knife
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Falchion Knife
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Flip Knife
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Gut Knife
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Huntsman Knife
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Karambit
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp M9 Bayonet
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Shadow Daggers
+                    .dropdown.forward
+                      button.dropbtn.btn-md.adu.newdropdown.dropdown-toggle(data-toggle='dropdown')
+                        | Cases
+                        span.caret
+                      ul.dropdown-menu.kaal
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp CS:GO Weapon Case
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp CS:GO Weapon Case 2
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp CS:GO Weapon Case 3
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Chroma Case
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Chroma 2 Case
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Chroma 3 Case
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp eSports 2013 Case
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp eSports 2013 Winter Case
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp eSports 2013 Summer Case
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Falchion Case
+                    .dropdown.forward
+                      button.dropbtn.btn-md.adu.newdropdown.dropdown-toggle(data-toggle='dropdown')
+                        | Keys
+                        span.caret
+                      ul.dropdown-menu.kaal
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp CS:GO Weapon Case
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp CS:GO Weapon Case 2
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp CS:GO Weapon Case 3
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Chroma Case
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Chroma 2 Case
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Chroma 3 Case
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp eSports 2013 Case
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp eSports 2013 Winter Case
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp eSports 2013 Summer Case
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Falchion Case
+                    .dropdown.forward
+                      button.dropbtn.btn-md.adu.newdropdown.dropdown-toggle(data-toggle='dropdown')
+                        | Other
+                        span.caret
+                      ul.dropdown-menu.kaal
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Stickers
+                        li
+                          a.safeda(href='#')
+                            img(src='CZ75-Auto.png')
+                            |  &nbsp &nbsp Music kit
+                    .dropdown.forward
+                      button.dropbtn.btn-md.adu.newdropdown.dropdown-toggle(data-toggle='dropdown') All
+            .referral-top.col-lg-12(style='padding-top: 16px;')
+              .referral-top.col-lg-4(style='width: 304px;margin-left:-22px')
+                span Categories: 
+                .kode-sel-div
+                  #sel1id.select1-kode All
+                  i.fa.fa-sort-desc(aria-hidden='true')
+                  .select-check-div
+                    ul(style='list-style-type:none;')
+                      li
+                        .checkbox-kode-new
+                          span.check-box-title(style='color: inherit') All
+                      li
+                        .select1-kode(value='common')
+                          span.check-box
+                          span.check-box-title(style='color: inherit') Common
+                      li
+                        .select1-kode(value='StatTrak™')
+                          span.check-box
+                          span.check-box-title(style='color: inherit') StatTrak™
+                      li
+                        .select1-kode(value='★')
+                          span.check-box
+                          span.check-box-title(style='color: inherit') ★
+                      li
+                        .select1-kode(value='★')
+                          span.check-box
+                          span.check-box-title(style='color: inherit') ★ StatTrak™
+              .referral-top.col-lg-4(style='margin-left:-30px;')
+                span Rarity: 
+                .kode-sel-div
+                  #sel1id_retry.select1-kode All
+                  i.fa.fa-sort-desc(aria-hidden='true')
+                  .select-check-retry
+                    ul(style='list-style-type:none;')
+                      li
+                        .checkbox-kode-new
+                          span.check-box-title(style='color: inherit') All
+                      li
+                        .select1-kode(value='common')
+                          span.check-box
+                          span.check-box-title(style='color: inherit') Base Grade
+                      li
+                        .select1-kode(value='StatTrak™')
+                          span.check-box
+                          span.check-box-title(style='color: inherit') Consumer Grade
+                      li
+                        .select1-kode(value='★')
+                          span.check-box
+                          span.check-box-title(style='color: inherit') Industrial Grade
+                      li
+                        .select1-kode(value='★')
+                          span.check-box
+                          span.check-box-title(style='color: inherit') Mil-Spec Grade
+                      li
+                        .select1-kode(value='★')
+                          span.check-box
+                          span.check-box-title(style='color: inherit') Restricted
+                      li
+                        .select1-kode(value='★')
+                          span.check-box
+                          span.check-box-title(style='color: inherit') Classified
+                      li
+                        .select1-kode(value='★')
+                          span.check-box
+                          span.check-box-title(style='color: inherit') Covert
+                      li
+                        .select1-kode(value='★')
+                          span.check-box
+                          span.check-box-title(style='color: inherit') High Grade
+                      li
+                        .select1-kode(value='★')
+                          span.check-box
+                          span.check-box-title(style='color: inherit') Exotic
+              .referral-top.col-lg-2
+                span
+                  a(href='', style='color: #f6e444;text-decoration: underline;') Clear:
+              .referral-top.col-lg-2
+                input.input-kode1.empty(type='text', placeholder='   Find...')
+            .referral-top.col-lg-9(style='padding-top: 16px;')
+              .referral-top.col-lg-6(style='width: 304px;margin-left:-22px')
+                span Sort by:  
+                .kode-sel-div(style='background:#192429')
+                  span
+                    a(href='', style='text-decoration:none')
+                      | Price
+                      i.fa.fa-sort-desc(aria-hidden='true')
+                  span(style='margin-left: 34px;')
+                    a(href='', style='text-decoration:none')
+                      | Name
+                      i.fa.fa-sort-desc(aria-hidden='true')
+              .referral-top.col-lg-6(style='width: 304px;margin-left:-22px')
+                .btn-blacks.page-prev.disabled(style='margin-left:194px;')
+                  i.fa.fa-angle-left(aria-hidden='true', style='color: #9ea7b3;font-size: 20px;font-weight: 900;')
+                .btn-yellow.page-prev.disabled(style='margin-left:14px;')
+                  i.fa.fa-angle-right(aria-hidden='true', style='color: #00020b;font-size: 20px;font-weight: 900;')
+            .referral-top.col-lg-3(style='padding-top: 23px;')
+              span Cart:
+              span(style='margin-left: 109px;')
+                a(href='')
+                  i.fa.fa-trash-o.fa-2x(aria-hidden='true')
+            .referral-top.col-lg-12
+              ul.bonus-shop-items
+                .referral-top.col-lg-10
+                  .referral-top.col-lg-12
+                    .col-lg-3(style='background:#192429;')
+                      .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                      .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: -51px;')
+                        img(src='store1.png')
+                      div(style='font-size:10px;width: 145px;margin-left: -51px;')
+                        | ★ StatTrak™ Bayonet
+                      .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: -51px;')
+                        | 45533
+                    .col-lg-3(style='background:#192429;')
+                      .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                      .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: -34px;')
+                        img(src='store1.png')
+                      div(style='font-size:10px;width: 145px;margin-left: -34px;')
+                        | ★ StatTrak™ Bayonet
+                      .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: -34px;')
+                        | 45533
+                    .col-lg-3(style='background:#192429;')
+                      .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                      .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: -15px;')
+                        img(src='store1.png')
+                      div(style='font-size:10px;width: 145px;margin-left: -15px;')
+                        | ★ StatTrak™ Bayonet
+                      .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: -15px;')
+                        | 45533
+                    .col-lg-3(style='background:#192429;')
+                      .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                      .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: 1px;')
+                        img(src='store1.png')
+                      div(style='font-size:10px;width: 145px;margin-left: 1px;')
+                        | ★ StatTrak™ Bayonet
+                      .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: 1px;')
+                        | 45533
+                  .referral-top.col-lg-12(style='margin-top: 8px;')
+                    .col-lg-3(style='background:#192429;')
+                      .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                      .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: -51px;')
+                        img(src='store1.png')
+                      div(style='font-size:10px;width: 145px;margin-left: -51px;')
+                        | ★ StatTrak™ Bayonet
+                      .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: -51px;')
+                        | 45533
+                    .col-lg-3(style='background:#192429;')
+                      .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                      .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: -34px;')
+                        img(src='store1.png')
+                      div(style='font-size:10px;width: 145px;margin-left: -34px;')
+                        | ★ StatTrak™ Bayonet
+                      .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: -34px;')
+                        | 45533
+                    .col-lg-3(style='background:#192429;')
+                      .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                      .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: -15px;')
+                        img(src='store1.png')
+                      div(style='font-size:10px;width: 145px;margin-left: -15px;')
+                        | ★ StatTrak™ Bayonet
+                      .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: -15px;')
+                        | 45533
+                    .col-lg-3(style='background:#192429;')
+                      .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                      .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: 1px;')
+                        img(src='store1.png')
+                      div(style='font-size:10px;width: 145px;margin-left: 1px;')
+                        | ★ StatTrak™ Bayonet
+                      .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: 1px;')
+                        | 45533
+                  .referral-top.col-lg-12(style='margin-top: 8px;')
+                    .col-lg-3(style='background:#192429;')
+                      .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                      .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: -51px;')
+                        img(src='store1.png')
+                      div(style='font-size:10px;width: 145px;margin-left: -51px;')
+                        | ★ StatTrak™ Bayonet
+                      .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: -51px;')
+                        | 45533
+                    .col-lg-3(style='background:#192429;')
+                      .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                      .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: -34px;')
+                        img(src='store1.png')
+                      div(style='font-size:10px;width: 145px;margin-left: -34px;')
+                        | ★ StatTrak™ Bayonet
+                      .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: -34px;')
+                        | 45533
+                    .col-lg-3(style='background:#192429;')
+                      .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                      .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: -15px;')
+                        img(src='store1.png')
+                      div(style='font-size:10px;width: 145px;margin-left: -15px;')
+                        | ★ StatTrak™ Bayonet
+                      .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: -15px;')
+                        | 45533
+                    .col-lg-3(style='background:#192429;')
+                      .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                      .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: 1px;')
+                        img(src='store1.png')
+                      div(style='font-size:10px;width: 145px;margin-left: 1px;')
+                        | ★ StatTrak™ Bayonet
+                      .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: 1px;')
+                        | 45533
+                  .referral-top.col-lg-12(style='margin-top: 8px;')
+                    .col-lg-3(style='background:#192429;')
+                      .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                      .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: -51px;')
+                        img(src='store1.png')
+                      div(style='font-size:10px;width: 145px;margin-left: -51px;')
+                        | ★ StatTrak™ Bayonet
+                      .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: -51px;')
+                        | 45533
+                    .col-lg-3(style='background:#192429;')
+                      .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                      .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: -34px;')
+                        img(src='store1.png')
+                      div(style='font-size:10px;width: 145px;margin-left: -34px;')
+                        | ★ StatTrak™ Bayonet
+                      .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: -34px;')
+                        | 45533
+                    .col-lg-3(style='background:#192429;')
+                      .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                      .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: -15px;')
+                        img(src='store1.png')
+                      div(style='font-size:10px;width: 145px;margin-left: -15px;')
+                        | ★ StatTrak™ Bayonet
+                      .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: -15px;')
+                        | 45533
+                    .col-lg-3(style='background:#192429;')
+                      .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                      .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: 1px;')
+                        img(src='store1.png')
+                      div(style='font-size:10px;width: 145px;margin-left: 1px;')
+                        | ★ StatTrak™ Bayonet
+                      .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: 1px;')
+                        | 45533
+                  .referral-top.col-lg-12(style='margin-top: 8px;')
+                    .col-lg-3(style='background:#192429;')
+                      .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                      .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: -51px;')
+                        img(src='store1.png')
+                      div(style='font-size:10px;width: 145px;margin-left: -51px;')
+                        | ★ StatTrak™ Bayonet
+                      .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: -51px;')
+                        | 45533
+                    .col-lg-3(style='background:#192429;')
+                      .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                      .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: -34px;')
+                        img(src='store1.png')
+                      div(style='font-size:10px;width: 145px;margin-left: -34px;')
+                        | ★ StatTrak™ Bayonet
+                      .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: -34px;')
+                        | 45533
+                    .col-lg-3(style='background:#192429;')
+                      .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                      .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: -15px;')
+                        img(src='store1.png')
+                      div(style='font-size:10px;width: 145px;margin-left: -15px;')
+                        | ★ StatTrak™ Bayonet
+                      .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: -15px;')
+                        | 45533
+                    .col-lg-3(style='background:#192429;')
+                      .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                      .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: 1px;')
+                        img(src='store1.png')
+                      div(style='font-size:10px;width: 145px;margin-left: 1px;')
+                        | ★ StatTrak™ Bayonet
+                      .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: 1px;')
+                        | 45533
+                  .referral-top.col-lg-12(style='margin-top: 8px;')
+                    .col-lg-3(style='background:#192429;')
+                      .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                      .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: -51px;')
+                        img(src='store1.png')
+                      div(style='font-size:10px;width: 145px;margin-left: -51px;')
+                        | ★ StatTrak™ Bayonet
+                      .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: -51px;')
+                        | 45533
+                    .col-lg-3(style='background:#192429;')
+                      .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                      .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: -34px;')
+                        img(src='store1.png')
+                      div(style='font-size:10px;width: 145px;margin-left: -34px;')
+                        | ★ StatTrak™ Bayonet
+                      .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: -34px;')
+                        | 45533
+                    .col-lg-3(style='background:#192429;')
+                      .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                      .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: -15px;')
+                        img(src='store1.png')
+                      div(style='font-size:10px;width: 145px;margin-left: -15px;')
+                        | ★ StatTrak™ Bayonet
+                      .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: -15px;')
+                        | 45533
+                    .col-lg-3(style='background:#192429;')
+                      .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                      .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: 1px;')
+                        img(src='store1.png')
+                      div(style='font-size:10px;width: 145px;margin-left: 1px;')
+                        | ★ StatTrak™ Bayonet
+                      .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: 1px;')
+                        | 45533
+                  .col-lg-3(style='margin-top: 22%;')
+                    .btn-yellow.push.disabled(style='width: 127%;')
+                      i.fa.fa-chevron-left(aria-hidden='true')
+                      |  &nbsp Previous page
+                  .col-lg-6
+                    input.form-control.firm(type='text', value='1')
+                    |  &nbsp 
+                    span of
+                    |  &nbsp &nbsp 
+                    span.safeda 52
+                  .col-lg-3(style='margin-top: 22%;')
+                    .btn-yellow.push.disabled(style='width: 127%;')
+                      | Next page &nbsp 
+                      i.fa.fa-chevron-right(aria-hidden='true')
+                .col-lg-2(style='background:#192429;height: 300px;')
+                  .col-lg-2(style='background:#192429;margin-top: 1px;')
+                    .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                    .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: -42px;')
+                      img(src='store1.png')
+                    div(style='font-size:10px;width: 145px;margin-left: -42px;')
+                      | ★ StatTrak™ Bayonet
+                    .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: -42px;')
+                      | 45533
+                  br
+                  br
+                  br
+                  .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);margin-bottom: 52%;')
+                  .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: -27px;')
+                    img(src='store1.png')
+                  div(style='font-size:10px;width: 145px;margin-left: -27px;')
+                    | ★ StatTrak™ Bayonet
+                  .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: -27px;')
+                    | 45533
+                  .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);margin-bottom: 10%;')
+                  .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: -27px;')
+                    img(src='store1.png')
+                  div(style='font-size:10px;width: 145px;margin-left: -27px;')
+                    | ★ StatTrak™ Bayonet
+                  .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: -27px;')
+                    | 45533
+                  .bonus-shop-item-rarity(style='background-color: rgb(246, 228, 70);')
+                  .bonus-shop-item-image(style='background:#131d22;border-top: 2px solid yellow;width: 145px;margin-left: -27px;')
+                    img(src='store1.png')
+                  div(style='font-size:10px;width: 145px;margin-left: -27px;')
+                    | ★ StatTrak™ Bayonet
+                  .bonus-shop-item-price(style='background:#131d22;width: 145px;margin-left: -27px;')
+                    | 45533
+                div
+                  p(style='text-align:center;text-align: center;margin-top: 62%;') 88431
+                  center
+                    button.btn-lg.warn(type='button') Buy
+        #tech.tab-pane(role='tabpanel')
+          // Modal
+          #myModal.modal.fade(role='dialog')
+            .modal-dialog
+              // Modal content
+              .modal-content(style='width: 158%;margin-left:-112px;')
+                .Kore-pop1
+                  button.close(type='button', data-dismiss='modal', style='margin-right: -27px;margin-top: -31px;') ×
+                  h4.modal-title TECH SUPPORT
+                .modal-body.Kore-dylog
+                  .Kode-son
+                    .section-header(style='margin-top:27px;')
+                      div(style='display:inline;')
+                        img(src='invelop3.png', style='width:81px;')
+                      .title.middle-block(style='display:inline;') Send Email
+                    .section-description(style='margin-top:20px;')
+                      .text(style='font-family: roboto;font-size: 16px;margin-top: 21px;padding-left: 16px;')
+                        | Send us email with a description of the difficulty encountered via any mail service. The request will be considered in turn
+                    a.btn.btn-warning.my-btn(href='mailto:csgofast.com@gmail.com', target='_blank') Send message
+                  .Kode-son.k-pads
+                    .section-header(style='margin-top:27px;margin-left: 16px;')
+                      div(style='display:inline;')
+                        img(src='comment.png', style='width:81px;')
+                      .title.middle-block(style='display:inline;') Report in chat
+                    .section-description
+                      .text(style='font-family: roboto;font-size: 16px;margin-top: 21px;padding-left: 16px;')
+                        | Send a message with a description of a problem to the chat of our technical support. The first available operator will contact you
+                    a.btn.btn-warning.my-btn(href='mailto:csgofast.com@gmail.com', target='_blank') Send message
+                  .Kode-son.k-pads
+                    .section-header(style='margin-top:27px;margin-left: 16px;')
+                      div(style='display:inline;')
+                        img(src='ticket.png', style='width:81px;')
+                      .title.middle-block(style='display:inline;') Ticket System
+                    .section-description
+                      .text(style='font-family: roboto;font-size: 16px;margin-top: 21px;padding-left: 16px;')
+                        | This system is suitable for the majority of typical problems and allows to receive the quicker reply. Choose the offered options which describe the difficulty encountered
+                    a.btn.btn-warning.my-btn(href='mailto:csgofast.com@gmail.com', target='_blank', style='margin-top: 14px;') Send message
+                  // modal ends here
+      script.
+        $(document).ready(function(){
+        $("#flip").click(function(){
+        $("#panel2").slideUp("slow");
+        $("#panel3").slideUp("slow");
+        });
+        $("#flip2").click(function(){
+        $("#panel2").slideToggle("slow");
+        $("#panel3").slideUp("slow");
+        });
+        $("#flip3").click(function(){
+        $("#panel3").slideToggle("slow");
+        $("#panel2").slideUp("slow");
+        });
+        })
+        $(document).ready(function(){
+        $("#flip").click(function(){
+        $("#panel2").slideUp("slow");
+        $("#panel3").slideUp("slow");
+        });
+        $("#para2").click(function(){
+        $("#pane2").slideToggle("slow");
+        $("#pane3").slideUp("slow");
+        });
+        $("#para3").click(function(){
+        $("#pane3").slideToggle("slow");
+        $("#pane2").slideUp("slow");
+        });
+        })

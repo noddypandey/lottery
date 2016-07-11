@@ -50,6 +50,9 @@ app.use(function(req, res, next) {
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', HomeController.index);
+app.get("/layout", function(req, res){
+  res.render("layout2", {title:"Home"});
+});
 app.get('/contact', contactController.contactGet);
 app.post('/contact', contactController.contactPost);
 app.get('/account', userController.ensureAuthenticated, userController.accountGet);
@@ -68,9 +71,9 @@ app.get('/unlink/:provider', userController.ensureAuthenticated, userController.
 app.get('/auth/google', passport.authenticate('google', { scope: 'profile email' }));
 app.get('/auth/google/callback', passport.authenticate('google', { successRedirect: '/', failureRedirect: '/login' }));
 
-app.get('/auth/steam', passport.authorize('openid', { state: 'SOME STATE' }));
-app.get('/auth/steam/callback', passport.authorize('openid', { failureRedirect: '/login' }), (req, res) => {
-  res.redirect(req.session.returnTo || '/');
+app.get('/auth/steam', passport.authenticate('openid', { state: 'SOME STATE' }));
+app.get('/auth/steam/callback', passport.authenticate('openid', { failureRedirect: '/login' }), (req, res) => {
+  res.redirect(req.session.returnTo || '/layout');
 });
 
 // Production error handler
