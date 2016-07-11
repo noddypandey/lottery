@@ -90,7 +90,7 @@ passport.use(new GoogleStrategy({
 passport.use(new OpenIDStrategy({
   apiKey: process.env.STEAM_KEY,
   providerURL: 'http://steamcommunity.com/openid',
-  returnURL: 'http://loterry-node.herokuapp.com/auth/steam/callback',
+  returnURL: '/auth/steam/callback',
   realm: 'http://loterry-node.herokuapp.com/',
   stateless: true,
   profile:true
